@@ -9,6 +9,7 @@ const data = {
             brand: 'Nike',
             rating: 4.5,
             numReviews: 10,
+            countInStock: 10,
             description: 'High quality product'
         },
         {
@@ -20,6 +21,7 @@ const data = {
             brand: 'Addidas',
             rating: 4,
             numReviews: 15,
+            countInStock: 20,
             description: 'High quality product'
         },
         {
@@ -31,6 +33,7 @@ const data = {
             brand: 'Nike',
             rating: 4.5,
             numReviews: 21,
+            countInStock: 30,
             description: 'High quality product'
         },
         {
@@ -42,6 +45,7 @@ const data = {
             brand: 'Nike',
             rating: 4.5,
             numReviews: 10,
+            countInStock: 10,
             description: 'High quality product'
         },
         {
@@ -53,6 +57,7 @@ const data = {
             brand: 'Nike',
             rating: 4.5,
             numReviews: 10,
+            countInStock: 10,
             description: 'High quality product'
         },
         {
@@ -64,6 +69,7 @@ const data = {
             brand: 'Nike',
             rating: 4.5,
             numReviews: 10,
+            countInStock: 10,
             description: 'High quality product'
         },
     ]
