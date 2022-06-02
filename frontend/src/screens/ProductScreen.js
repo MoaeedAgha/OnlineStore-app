@@ -10,8 +10,8 @@ export default function ProductScreen(props) {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const { id } = useParams();
-    const productId = Number(id);
-    const [qty , setQty] = useState(1)
+    const productId = id;
+    const [qty , setQty] = useState(1);
     const productDetails = useSelector((state) => state.productDetails);
     const {loading , error, product} = productDetails;
     useEffect(() => {
