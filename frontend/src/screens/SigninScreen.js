@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {Link, useLocation, useNavigate} from 'react-router-dom';
 import {signin} from '../actions/userActions';
@@ -8,9 +8,8 @@ import MessageBox from '../components/MessageBox';
 export default function SigninScreen() {
     const [email , setEmail] =useState('');
     const [Password, setPassword] = useState('');
-   // const redirect = props.location.search? props.location.search.split('=')[1]: '/';
 
-   const navigation = useRef(useNavigate());
+   const navigation = useNavigate();
    const { search } = useLocation();
    const redirect = search ? search.split('=')[1] : '/';  
     const userSignin = useSelector((state) => state.userSignin);
@@ -22,7 +21,7 @@ export default function SigninScreen() {
     }
     useEffect(() => {
         if (userInfo) {
-            navigation.current(redirect);
+            navigation(redirect);
         }
     }, [userInfo, navigation, redirect]);
 
